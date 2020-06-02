@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="Additional Services" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="BOOKING_ID">REGX1743ER</value>
+      <value name="ON_BOARD_ENT">AVAILABLE</value>
+      <value name="PRE_FLIGHT_SHOPPING">NOT AVAILABLE</value>
+      <value name="FLYNET_ACCESS">ACCESSIBLE</value>
+      <value name="WELL_BEING_ONBOARD">NOT AVAILABLE</value>
+      <value name="FLIGHT_NUMBER">LUFT1000A</value>
+      <value name="CABIN_TYPE">BUSINESS</value>
+    </record>
+  </record>
+</IDataXMLCoder>

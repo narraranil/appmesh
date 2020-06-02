@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="SAG-610TXF2" id="0" name="TS_wmTestSuite_xml" package="AirlineDemoTests" skipped="0" tests="13" time="0.257" timestamp="2019-07-16T09:48:12">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="ant.file.type.BuildTest" value="file" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\templates" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="C:\SoftwareAGMSR104" />
+
+          <property name="os.name" value="Windows 7" />
+
+          <property name="sun.boot.class.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\resources.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\rt.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\sunrsasign.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jsse.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jce.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\charsets.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jfr.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\classes" />
+
+          <property name="test.reports.dir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
+
+          <property name="java.runtime.version" value="1.8.0_192-b01" />
+
+          <property name="user.name" value="ranr-er" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\bin" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.version" value="1.8.0_192" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="SG" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="C:\SoftwareAGMSR104\jvm\jvm\jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-composite-runner.xml" />
+
+          <property name="os.version" value="6.1" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.192-b01" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-composite-runner.xml" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\scripts" />
+
+          <property name="user.home" value="C:\Users\ranr-er" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Octave\Octave-5.1.0.0;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\SysWOW64\Empirum;C:\Program Files (x86)\Intel\UCRT\;C:\Program Files\Intel\UCRT\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PuTTY\;C:\HashiCorp\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\ranr-er\AppData\Local\Programs\Microsoft VS Code\bin;." />
+
+          <property name="java.vendor.url" value="http://www.azulsystems.com/" />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports\TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports\TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\junitvmwatcher4047185850331133178.properties propsfile=C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\junit6505401792358102891.properties" />
+
+          <property name="java.class.path" value="C:\SoftwareAGMSR104\common\lib\testsuite\commons-jxpath-1.2.jar;C:\SoftwareAGMSR104\common\lib\testsuite\hamcrest-core.jar;C:\SoftwareAGMSR104\common\lib\testsuite\httpunit.jar;C:\SoftwareAGMSR104\common\lib\testsuite\junit.jar;C:\SoftwareAGMSR104\common\lib\testsuite\serviceInterceptor.jar;C:\SoftwareAGMSR104\common\lib\testsuite\serviceMockClient.jar;C:\SoftwareAGMSR104\common\lib\testsuite\wmjxpath.jar;C:\SoftwareAGMSR104\common\lib\testsuite\xmlunit1.0.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-core-asl.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-jaxrs.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-mapper-asl.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-annotations.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-core.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-databind.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-dataformat-cbor.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-dataformat-yaml.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-module-jaxb-annotations.jar;C:\SoftwareAGMSR104\common\lib\wm-isclient.jar;C:\SoftwareAGMSR104\common\lib\ext\icu4j.jar;C:\SoftwareAGMSR104\common\lib\ext\enttoolkit.jar;C:\SoftwareAGMSR104\IntegrationServer\lib\wm-isserver.jar;C:\SoftwareAGMSR104\common\lib\wm-g11nutils.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.javax.mail.jar;C:\SoftwareAGMSR104\common\lib\ant\ant-contrib-1.0b3.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="Service Pack 1" />
+
+          <property name="eclipse.pdebuild.home" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\." />
+
+          <property name="java.io.tmpdir" value="C:\Users\ranr-er\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="localhost" />
+
+          <property name="webMethods.test.scope.packages" value="AirlineDemo" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+
+          <property name="ant.file.BuildTest" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-test-suites.xml" />
+
+          <property name="user.dir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor" />
+
+          <property name="build.javac.target" value="1.8" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="ant.core.lib" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar" />
+
+          <property name="current.project" value="AirlineDemoTestSuiteExecutor" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="webMethods.projects.location" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor/.." />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="C:\Users\ranr\git\AssetRepo\assets\IS\Tests\AirlineDemoTests" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.0  TC_newReservationData_Positive" time="0.047" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.1  TC_newReservationData_Negative" time="0.012" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.2  TC_cancelReservation_Positive" time="0.017" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.3  TC_mapSourceData_Positive" time="0.019" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.4  TC_reservationData_Positive" time="0.019" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.5  TC_additionalServiceData_Positive" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.6  TC_inventoryData_Positive" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.7  TC_TotalTxnByEOD_Positive" time="0.016" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.8  TC_mapSourceData_Negative" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.9  TC_reservationData_Negative" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.10  TC_additionalServiceData_Negative" time="0.005" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.11  TC_inventoryData_Negative" time="0.004" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.12  TC_TotalTxnByEOD_Negative" time="0.005" />
+
+  </testsuite>
+  <testsuite errors="0" failures="2" hostname="SAG-610TXF2" id="1" name="TS_wmTestSuite_xml" package="AirlineDemoTests" skipped="0" tests="13" time="0.305" timestamp="2019-07-16T09:46:51">
+      <properties>
+          <property name="java.vendor" value="Azul Systems, Inc." />
+
+          <property name="ant.file.type.BuildTest" value="file" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\templates" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="webMethods.home" value="C:\SoftwareAGMSR104" />
+
+          <property name="os.name" value="Windows 7" />
+
+          <property name="sun.boot.class.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\resources.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\rt.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\sunrsasign.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jsse.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jce.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\charsets.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\lib\jfr.jar;C:\SoftwareAGMSR104\jvm\jvm\jre\classes" />
+
+          <property name="test.reports.dir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
+
+          <property name="java.runtime.version" value="1.8.0_192-b01" />
+
+          <property name="user.name" value="ranr-er" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\bin" />
+
+          <property name="ant.project.default-target" value="composite-runner-all-tests" />
+
+          <property name="ant.project.name" value="WmTestSuite Runner Builder" />
+
+          <property name="java.version" value="1.8.0_192" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="ant.file.type.WmTestSuite Runner Builder" value="file" />
+
+          <property name="user.country" value="SG" />
+
+          <property name="webMethods.integrationServer.userid" value="Administrator" />
+
+          <property name="java.home" value="C:\SoftwareAGMSR104\jvm\jvm\jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-composite-runner.xml" />
+
+          <property name="os.version" value="6.1" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.192-b01" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib" />
+
+          <property name="webMethods.integrationServer.port" value="5555" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="ant.file.WmTestSuite Runner Builder" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-composite-runner.xml" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\scripts" />
+
+          <property name="user.home" value="C:\Users\ranr-er" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="C:\SoftwareAGMSR104\jvm\jvm\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Octave\Octave-5.1.0.0;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\SysWOW64\Empirum;C:\Program Files (x86)\Intel\UCRT\;C:\Program Files\Intel\UCRT\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PuTTY\;C:\HashiCorp\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\ranr-er\AppData\Local\Programs\Microsoft VS Code\bin;." />
+
+          <property name="java.vendor.url" value="http://www.azulsystems.com/" />
+
+          <property name="webMethods.test.setup.profile.mode" value="NONE" />
+
+          <property name="webMethods.test.profile.result.location" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports" />
+
+          <property name="java.vm.vendor" value="Azul Systems, Inc." />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.softwareag.utf.runner.UTFSuiteCompositeRunner$init skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports\TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.txt formatter=com.softwareag.utf.runner.XMLJUnitResultFormatter,C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\test\reports\TEST-com.softwareag.utf.runner.UTFSuiteCompositeRunner$init.xml crashfile=C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\junitvmwatcher5603637940637276054.properties propsfile=C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\junit6245715191465202603.properties" />
+
+          <property name="java.class.path" value="C:\SoftwareAGMSR104\common\lib\testsuite\commons-jxpath-1.2.jar;C:\SoftwareAGMSR104\common\lib\testsuite\hamcrest-core.jar;C:\SoftwareAGMSR104\common\lib\testsuite\httpunit.jar;C:\SoftwareAGMSR104\common\lib\testsuite\junit.jar;C:\SoftwareAGMSR104\common\lib\testsuite\serviceInterceptor.jar;C:\SoftwareAGMSR104\common\lib\testsuite\serviceMockClient.jar;C:\SoftwareAGMSR104\common\lib\testsuite\wmjxpath.jar;C:\SoftwareAGMSR104\common\lib\testsuite\xmlunit1.0.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-core-asl.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-jaxrs.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.jackson-mapper-asl.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-annotations.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-core.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-databind.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-dataformat-cbor.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-dataformat-yaml.jar;C:\SoftwareAGMSR104\common\lib\ext\jackson-module-jaxb-annotations.jar;C:\SoftwareAGMSR104\common\lib\wm-isclient.jar;C:\SoftwareAGMSR104\common\lib\ext\icu4j.jar;C:\SoftwareAGMSR104\common\lib\ext\enttoolkit.jar;C:\SoftwareAGMSR104\IntegrationServer\lib\wm-isserver.jar;C:\SoftwareAGMSR104\common\lib\wm-g11nutils.jar;C:\SoftwareAGMSR104\common\lib\glassfish\gf.javax.mail.jar;C:\SoftwareAGMSR104\common\lib\ant\ant-contrib-1.0b3.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+
+          <property name="webMethods.test.scope.packages.set" value="true" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="webMethods.integrationServer.ssl" value="false" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="Service Pack 1" />
+
+          <property name="eclipse.pdebuild.home" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.eclipse.pde.build_3.9.300.v20170515-0912\." />
+
+          <property name="java.io.tmpdir" value="C:\Users\ranr-er\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/" />
+
+          <property name="webMethods.integrationServer.name" value="localhost" />
+
+          <property name="webMethods.test.scope.packages" value="AirlineDemo" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="C:\SoftwareAGMSR104\jvm\jvm\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+
+          <property name="ant.file.BuildTest" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor\run-test-suites.xml" />
+
+          <property name="user.dir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor" />
+
+          <property name="build.javac.target" value="1.8" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="webMethods.test.setup.external.classpath.layout" value="resources/test/classes,resources/java/classes,resources/test/jars,resources/java/jars,resources/jars" />
+
+          <property name="ant.core.lib" value="C:\SoftwareAGMSR104\Designer\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar" />
+
+          <property name="current.project" value="AirlineDemoTestSuiteExecutor" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="webMethods.integrationServer.password" value="manage" />
+
+          <property name="webMethods.projects.location" value="C:\Users\ranr\workspace104\AirlineDemoTestSuiteExecutor/.." />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="composite-runner-all-tests" />
+
+          <property name="webMethods.test.setup.location.set" value="true" />
+
+          <property name="webMethods.test.setup.location" value="C:\Users\ranr\git\AssetRepo\assets\IS\Tests\AirlineDemoTests" />
+
+      </properties>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.0  TC_newReservationData_Positive" time="0.054" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.1  TC_newReservationData_Negative" time="0.007" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.2  TC_cancelReservation_Positive" time="0.013" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.3  TC_mapSourceData_Positive" time="0.006" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.4  TC_reservationData_Positive" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.5  TC_additionalServiceData_Positive" time="0.015">
+          <failure message="Additional Services/ON_BOARD_ENT :Expected and actual objects don&apos;t match.: expected &lt;AVAILABLE&gt; but was &lt;AVAILABL&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Additional Services/ON_BOARD_ENT :Expected and actual objects don&apos;t match.: expected &lt;AVAILABLE&gt; but was &lt;AVAILABL&gt;
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:205)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:134)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:75)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1242)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1152)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:570)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:65)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.6  TC_inventoryData_Positive" time="0.01" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.7  TC_TotalTxnByEOD_Positive" time="0.019" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.8  TC_mapSourceData_Negative" time="0.016" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.9  TC_reservationData_Negative" time="0.014" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.10  TC_additionalServiceData_Negative" time="0.011">
+          <failure message="Additional Services/ON_BOARD_ENT :Expected and actual objects don&apos;t match.: expected &lt;AVAILABLE&gt; but was &lt;AVAILABL&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Additional Services/ON_BOARD_ENT :Expected and actual objects don&apos;t match.: expected &lt;AVAILABLE&gt; but was &lt;AVAILABL&gt;
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:205)
+	at com.wm.ps.test.WmAssert.assertIDataEquals(WmAssert.java:134)
+	at com.wm.ps.test.WmAssert.assertEquals(WmAssert.java:75)
+	at com.wm.ps.test.DefaultResultsValidator.assertValid(DefaultResultsValidator.java:168)
+	at com.wm.ps.test.WmTestCase.runInvoke(WmTestCase.java:1242)
+	at com.wm.ps.test.WmTestCase.runTest(WmTestCase.java:1152)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:570)
+	at com.softwareag.utf.runner.UTFSuiteCompositeRunner.runChild(UTFSuiteCompositeRunner.java:65)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.11  TC_inventoryData_Negative" time="0.016" />
+
+      <testcase classname="com.wm.ps.test.WmTestCase" name="0.12  TC_TotalTxnByEOD_Negative" time="0.012" />
+
+  </testsuite>
+</testsuites>

@@ -1,0 +1,162 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  labels:
+    app: api-gateway-deployment
+  name: api-gateway-deployment
+  namespace: asia-presales
+  resourceVersion: "20266573"
+  selfLink: /apis/apps/v1beta2/namespaces/asia-presales/deployments/api-gateway-deployment
+  uid: edaf6cfa-a9e6-11e9-a498-005056849e51
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: api-gateway-deployment
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: api-gateway-deployment
+    spec:
+      containers:
+      - image: narraranil/apigw:10.5
+        imagePullPolicy: IfNotPresent
+        name: api-gateway-deployment
+        ports:
+        - containerPort: 5555
+          name: 5555tcp1
+          protocol: TCP
+        - containerPort: 9072
+          name: 9072tcp1
+          protocol: TCP
+        - containerPort: 9240
+          name: 9240tcp1
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      initContainers:
+      - command:
+        - sysctl
+        - -w
+        - vm.max_map_count=262144
+        image: busybox
+        imagePullPolicy: IfNotPresent
+        name: init-sysctl
+        resources: {}
+        securityContext:
+          privileged: true
+          procMount: Default
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2019-07-19T05:37:20Z"
+    lastUpdateTime: "2019-07-19T05:37:20Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2019-07-19T05:34:56Z"
+    lastUpdateTime: "2019-07-19T05:37:20Z"
+    message: ReplicaSet "api-gateway-deployment-6dc545c7c4" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 664
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    field.cattle.io/targetWorkloadIds: '["deployment:asia-presales:api-gateway-deployment"]'
+  creationTimestamp: "2019-07-19T05:42:07Z"
+  labels:
+    cattle.io/creator: norman
+  name: ingress-02aa0f148c0d82a6e4427a23e9b63a3c
+  namespace: asia-presales
+  ownerReferences:
+  - apiVersion: v1beta1/extensions
+    controller: true
+    kind: Ingress
+    name: apigateway
+    uid: f214c247-a9e7-11e9-a498-005056849e51
+  resourceVersion: "19086363"
+  selfLink: /api/v1/namespaces/asia-presales/services/ingress-02aa0f148c0d82a6e4427a23e9b63a3c
+  uid: f1e6e1a3-a9e7-11e9-b6ef-005056846528
+spec:
+  clusterIP: 10.43.50.200
+  ports:
+  - port: 9072
+    protocol: TCP
+    targetPort: 9072
+  selector:
+    workloadID_ingress-02aa0f148c0d82a6e4427a23e9b63a3c: "true"
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+ ---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    field.cattle.io/creatorId: u-fmux6lm4tw
+    field.cattle.io/ingressState: '{"YXBpZ2F0ZXdheS9wcmVzYWxlcy1kZWZhdWx0L3hpcC5pby8vLzU1NTU=":"deployment:asia-presales:api-gateway-deployment","YXBpZ2F0ZXdheS9wcmVzYWxlcy1kZWZhdWx0L3hpcC5pby8vYXBpZ2F0ZXdheXVpLzkwNzI=":"deployment:asia-presales:api-gateway-deployment"}'
+    field.cattle.io/publicEndpoints: '[{"addresses":["10.20.198.167"],"port":80,"protocol":"HTTP","serviceName":"asia-presales:ingress-02aa0f148c0d82a6e4427a23e9b63a3c","ingressName":"asia-presales:apigateway","hostname":"apigateway.asia-presales.10.20.198.167.xip.io","path":"/apigatewayui","allNodes":true},{"addresses":["10.20.198.167"],"port":80,"protocol":"HTTP","serviceName":"asia-presales:ingress-584304044df5add38bb69cdf289bbad7","ingressName":"asia-presales:apigateway","hostname":"apigateway.asia-presales.10.20.198.167.xip.io","path":"/","allNodes":true}]'
+  creationTimestamp: "2019-07-19T05:42:07Z"
+  generation: 362
+  labels:
+    cattle.io/creator: norman
+  name: apigateway
+  namespace: asia-presales
+  resourceVersion: "20266366"
+  selfLink: /apis/extensions/v1beta1/namespaces/asia-presales/ingresses/apigateway
+  uid: f214c247-a9e7-11e9-a498-005056849e51
+spec:
+  rules:
+  - host: apigateway.daeipresal40399.eur.ad.sag
+    http:
+      paths:
+      - backend:
+          serviceName: ingress-02aa0f148c0d82a6e4427a23e9b63a3c
+          servicePort: 9072
+        path: /apigatewayui
+  - host: apigateway.daeipresal40399.eur.ad.sag
+    http:
+      paths:
+      - backend:
+          serviceName: ingress-584304044df5add38bb69cdf289bbad7
+          servicePort: 5555
+        path: /
+  tls:
+  - hosts:
+    - apigateway.daeipresal40399.eur.ad.sag
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.20.198.167
+    - ip: 10.20.198.168
+    - ip: 10.20.199.120
+    - ip: 10.20.199.121
+
+

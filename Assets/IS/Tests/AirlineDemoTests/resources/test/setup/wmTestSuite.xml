@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="Sample tests for the WmServiceMockSamples implementation" name="TS_wmTestSuite.xml">
+    <webMethodsTestCase description="Test with proper booking details" name="TC_newReservationData_Positive">
+        <service folder="AirlineDemo.services.flow" name="newReservationData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_newReservationData_PositiveInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_newReservationData_PositiveOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Test with invalid booking details" name="TC_newReservationData_Negative">
+        <service folder="AirlineDemo.services.flow" name="newReservationData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_newReservationData_NegativeInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_newReservationData_NegativeOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Test Reservation cancellation" name="TC_cancelReservation_Positive">
+        <service folder="AirlineDemo.services.flow" name="cancelReservation">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_cancelReservation_PositiveInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_cancelReservation_NegativeOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Test MAP APIs" name="TC_mapSourceData_Positive">
+        <service folder="AirlineDemo.services.flow" name="mapSourceData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_mapSourceData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_mapSourceData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get all reservation Data" name="TC_reservationData_Positive">
+        <service folder="AirlineDemo.services.flow" name="reservationData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_reservationData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_reservationData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get additional services availability for flights" name="TC_additionalServiceData_Positive">
+        <service folder="AirlineDemo.services.flow" name="additionalServiceData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_additionalServiceData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_additionalServiceData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get the inventory details" name="TC_inventoryData_Positive">
+        <service folder="AirlineDemo.services.flow" name="inventoryData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_inventoryData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_inventoryData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get latest 5 transactions done today." name="TC_TotalTxnByEOD_Positive">
+        <service folder="AirlineDemo.services.flow" name="TotalTxnByEOD">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_TotalTxnByEOD_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_TotalTxnByEOD_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Test MAP APIs" name="TC_mapSourceData_Negative">
+        <service folder="AirlineDemo.services.flow" name="mapSourceData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_mapSourceData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_mapSourceData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get all reservation Data" name="TC_reservationData_Negative">
+        <service folder="AirlineDemo.services.flow" name="reservationData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_reservationData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_reservationData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get additional services availability for flights" name="TC_additionalServiceData_Negative">
+        <service folder="AirlineDemo.services.flow" name="additionalServiceData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_additionalServiceData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_additionalServiceData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get the inventory details" name="TC_inventoryData_Negative">
+        <service folder="AirlineDemo.services.flow" name="inventoryData">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_inventoryData_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_inventoryData_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Get latest 5 transactions done today." name="TC_TotalTxnByEOD_Negative">
+        <service folder="AirlineDemo.services.flow" name="TotalTxnByEOD">
+            <input>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_TotalTxnByEOD_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/setup/AirlineDemo_services_flow_TotalTxnByEOD_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

@@ -1,0 +1,16 @@
+Testsuite: com.softwareag.utf.runner.UTFSuiteCompositeRunner$init
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec
+
+Testcase: 0.0  TC_newReservationData_Positive took 0.056 sec
+Testcase: 0.1  TC_newReservationData_Negative took 0.013 sec
+Testcase: 0.2  TC_cancelReservation_Positive took 0.018 sec
+Testcase: 0.3  TC_mapSourceData_Positive took 0.02 sec
+Testcase: 0.4  TC_reservationData_Positive took 0.019 sec
+Testcase: 0.5  TC_additionalServiceData_Positive took 0.013 sec
+Testcase: 0.6  TC_inventoryData_Positive took 0.014 sec
+Testcase: 0.7  TC_TotalTxnByEOD_Positive took 0.017 sec
+Testcase: 0.8  TC_mapSourceData_Negative took 0.006 sec
+Testcase: 0.9  TC_reservationData_Negative took 0.006 sec
+Testcase: 0.10  TC_additionalServiceData_Negative took 0.005 sec
+Testcase: 0.11  TC_inventoryData_Negative took 0.005 sec
+Testcase: 0.12  TC_TotalTxnByEOD_Negative took 0.006 sec

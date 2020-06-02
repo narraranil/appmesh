@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">restDescriptor</value>
+  <value name="node_subtype">restv2Descriptor</value>
+  <value name="node_nsName">AirlineDemo.descriptors:ReservationAccess</value>
+  <value name="node_pkg">AirlineDemo</value>
+  <value name="is_public">false</value>
+  <record name="generalInfo" javaclass="com.wm.util.Values">
+    <value name="specVersion">2.0</value>
+    <value name="hostName">MCSHIH01.eur.ad.sag:5555</value>
+    <value name="basePath">/reservationAccess</value>
+    <array name="schemes" type="value" depth="1">
+      <value>http</value>
+    </array>
+    <array name="consumes" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+    <array name="produces" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+  </record>
+  <record name="appInfo" javaclass="com.wm.util.Values">
+    <value name="appVersion">1.0</value>
+    <value name="title">ReservationAccess</value>
+    <null name="termsOfService"/>
+    <record name="contact" javaclass="com.wm.util.Values">
+      <null name="contactName"/>
+      <null name="contactUrl"/>
+      <null name="contactEmail"/>
+    </record>
+    <record name="license" javaclass="com.wm.util.Values">
+      <null name="licenseName"/>
+      <null name="licenseUrl"/>
+    </record>
+  </record>
+  <null name="sourceUri"/>
+  <null name="swaggerUrl"/>
+  <Boolean name="modifiable">true</Boolean>
+  <record name="restResources" javaclass="com.wm.util.Values">
+    <record name="/bookingDetails" javaclass="com.wm.util.Values">
+      <value name="nsName">AirlineDemo.apis:ReservationData</value>
+      <value name="path">/bookingDetails</value>
+      <null name="suffix"/>
+      <record name="operations" javaclass="com.wm.util.Values">
+        <record name="GET" javaclass="com.wm.util.Values">
+          <value name="operationType">GET</value>
+          <value name="nsName">/bookingDetails_GET</value>
+          <value name="description"></value>
+          <array name="requiredDefinitions" type="value" depth="1">
+            <value>AirlineDemo.services.flow:reservationData.ReservationDetails</value>
+            <value>/bookingDetails_GET_$response</value>
+          </array>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="BOOKING_ID" javaclass="com.wm.util.Values">
+              <value name="name">BOOKING_ID</value>
+              <value name="source">QUERY</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">reseponse</value>
+            <value name="source">BODY</value>
+            <value name="type">REFERENCE</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <value name="refDefinition">/bookingDetails_GET_$response</value>
+            <null name="definitionName"/>
+            <Boolean name="includeInRad">true</Boolean>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">OK</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+    <record name="/newBooking" javaclass="com.wm.util.Values">
+      <value name="nsName">AirlineDemo.apis:ReservationData</value>
+      <value name="path">/newBooking</value>
+      <null name="suffix"/>
+      <record name="operations" javaclass="com.wm.util.Values">
+        <record name="POST" javaclass="com.wm.util.Values">
+          <value name="operationType">POST</value>
+          <value name="nsName">/newBooking_POST</value>
+          <value name="description"></value>
+          <array name="requiredDefinitions" type="value" depth="1">
+            <value>AirlineDemo.services.flow:newReservationData.Booking Details</value>
+            <value>/newBooking_POST_$response</value>
+          </array>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="Booking Details" javaclass="com.wm.util.Values">
+              <value name="name">Booking Details</value>
+              <value name="source">BODY</value>
+              <value name="type">REFERENCE</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <value name="refDefinition">AirlineDemo.services.flow:newReservationData.Booking Details</value>
+              <value name="definitionName">Booking Details</value>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">reseponse</value>
+            <value name="source">BODY</value>
+            <value name="type">REFERENCE</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <value name="refDefinition">/newBooking_POST_$response</value>
+            <null name="definitionName"/>
+            <Boolean name="includeInRad">true</Boolean>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">OK</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+    <record name="/cancelBooking" javaclass="com.wm.util.Values">
+      <value name="nsName">AirlineDemo.apis:ReservationData</value>
+      <value name="path">/cancelBooking</value>
+      <null name="suffix"/>
+      <record name="operations" javaclass="com.wm.util.Values">
+        <record name="DELETE" javaclass="com.wm.util.Values">
+          <value name="operationType">DELETE</value>
+          <value name="nsName">/cancelBooking_DELETE</value>
+          <value name="description"></value>
+          <array name="requiredDefinitions" type="value" depth="1">
+            <value>/cancelBooking_DELETE_$response</value>
+          </array>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="BOOKING_ID" javaclass="com.wm.util.Values">
+              <value name="name">BOOKING_ID</value>
+              <value name="source">QUERY</value>
+              <value name="type">STRING</value>
+              <value name="description"></value>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+              <null name="definitionName"/>
+              <Boolean name="includeInRad">true</Boolean>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">reseponse</value>
+            <value name="source">BODY</value>
+            <value name="type">REFERENCE</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <value name="refDefinition">/cancelBooking_DELETE_$response</value>
+            <null name="definitionName"/>
+            <Boolean name="includeInRad">true</Boolean>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">OK</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+  <record name="restDefinitions" javaclass="com.wm.util.Values">
+    <record name="AirlineDemo.services.flow:reservationData.ReservationDetails" javaclass="com.wm.util.Values">
+      <value name="name">ReservationDetails</value>
+      <value name="nsName">AirlineDemo.services.flow:reservationData.ReservationDetails</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="BOOKING_ID" javaclass="com.wm.util.Values">
+          <value name="name">BOOKING_ID</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="AIRLINE" javaclass="com.wm.util.Values">
+          <value name="name">AIRLINE</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TRAVEL_DATE" javaclass="com.wm.util.Values">
+          <value name="name">TRAVEL_DATE</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="FLIGHT_NUMBER" javaclass="com.wm.util.Values">
+          <value name="name">FLIGHT_NUMBER</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="CABIN_TYPE" javaclass="com.wm.util.Values">
+          <value name="name">CABIN_TYPE</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TRIP_TYPE" javaclass="com.wm.util.Values">
+          <value name="name">TRIP_TYPE</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="FROM_TERMINAL" javaclass="com.wm.util.Values">
+          <value name="name">FROM_TERMINAL</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TO_TERMINAL" javaclass="com.wm.util.Values">
+          <value name="name">TO_TERMINAL</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="DEP_TIME" javaclass="com.wm.util.Values">
+          <value name="name">DEP_TIME</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="ARR_TIME" javaclass="com.wm.util.Values">
+          <value name="name">ARR_TIME</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PASSENGER_NAME" javaclass="com.wm.util.Values">
+          <value name="name">PASSENGER_NAME</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PASSENGER_AGE" javaclass="com.wm.util.Values">
+          <value name="name">PASSENGER_AGE</value>
+          <value name="source">QUERY</value>
+          <value name="type">LONG</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="EMAIL_ID" javaclass="com.wm.util.Values">
+          <value name="name">EMAIL_ID</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PAYMENT_METHOD" javaclass="com.wm.util.Values">
+          <value name="name">PAYMENT_METHOD</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="/bookingDetails_GET_$response" javaclass="com.wm.util.Values">
+      <value name="name">bookingDetails_GET_response</value>
+      <value name="nsName">/bookingDetails_GET_$response</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="ReservationDetails" javaclass="com.wm.util.Values">
+          <value name="name">ReservationDetails</value>
+          <value name="source">BODY</value>
+          <value name="type">REFERENCE</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <value name="refDefinition">AirlineDemo.services.flow:reservationData.ReservationDetails</value>
+          <value name="definitionName">ReservationDetails</value>
+          <Boolean name="includeInRad">false</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="/newBooking_POST_$response" javaclass="com.wm.util.Values">
+      <value name="name">newBooking_POST_response</value>
+      <value name="nsName">/newBooking_POST_$response</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="Booking Status" javaclass="com.wm.util.Values">
+          <value name="name">Booking Status</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="/cancelBooking_DELETE_$response" javaclass="com.wm.util.Values">
+      <value name="name">cancelBooking_DELETE_response</value>
+      <value name="nsName">/cancelBooking_DELETE_$response</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="Cancellation Details" javaclass="com.wm.util.Values">
+          <value name="name">Cancellation Details</value>
+          <value name="source">QUERY</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+    <record name="AirlineDemo.services.flow:newReservationData.Booking Details" javaclass="com.wm.util.Values">
+      <value name="name">Booking Details</value>
+      <value name="nsName">AirlineDemo.services.flow:newReservationData.Booking Details</value>
+      <Boolean name="autoGenerated">true</Boolean>
+      <Boolean name="recursive">false</Boolean>
+      <null name="description"/>
+      <record name="parameters" javaclass="com.wm.util.Values">
+        <record name="BOOKING_ID" javaclass="com.wm.util.Values">
+          <value name="name">BOOKING_ID</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="AIRLINE" javaclass="com.wm.util.Values">
+          <value name="name">AIRLINE</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TRAVEL_DATE" javaclass="com.wm.util.Values">
+          <value name="name">TRAVEL_DATE</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="FLIGHT_NUMBER" javaclass="com.wm.util.Values">
+          <value name="name">FLIGHT_NUMBER</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="CABIN_TYPE" javaclass="com.wm.util.Values">
+          <value name="name">CABIN_TYPE</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TRIP_TYPE" javaclass="com.wm.util.Values">
+          <value name="name">TRIP_TYPE</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="FROM_TERMINAL" javaclass="com.wm.util.Values">
+          <value name="name">FROM_TERMINAL</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="TO_TERMINAL" javaclass="com.wm.util.Values">
+          <value name="name">TO_TERMINAL</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="DEP_TIME" javaclass="com.wm.util.Values">
+          <value name="name">DEP_TIME</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="ARR_TIME" javaclass="com.wm.util.Values">
+          <value name="name">ARR_TIME</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PASSENGER_NAME" javaclass="com.wm.util.Values">
+          <value name="name">PASSENGER_NAME</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PASSENGER_AGE" javaclass="com.wm.util.Values">
+          <value name="name">PASSENGER_AGE</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">LONG</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="EMAIL_ID" javaclass="com.wm.util.Values">
+          <value name="name">EMAIL_ID</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+        <record name="PAYMENT_METHOD" javaclass="com.wm.util.Values">
+          <value name="name">PAYMENT_METHOD</value>
+          <value name="source">FORMDATA</value>
+          <value name="type">STRING</value>
+          <value name="description"></value>
+          <Boolean name="isRequired">true</Boolean>
+          <Boolean name="isArray">false</Boolean>
+          <null name="defaultValue"/>
+          <null name="refDefinition"/>
+          <null name="definitionName"/>
+          <Boolean name="includeInRad">true</Boolean>
+        </record>
+      </record>
+    </record>
+  </record>
+  <null name="radSource"/>
+  <value name="radVersion">1.0</value>
+  <array name="generatedDoctypes" type="record" depth="1">
+  </array>
+  <array name="generatedServices" type="record" depth="1">
+  </array>
+  <array name="generatedRestResources" type="record" depth="1">
+  </array>
+  <array name="resourceNodeNSNames" type="value" depth="1">
+    <value>AirlineDemo.apis:ReservationData</value>
+  </array>
+</Values>

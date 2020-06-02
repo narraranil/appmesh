@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="InventoryDetails" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="FLIGHT_NUMBER">LUFT1050B</value>
+      <value name="CABIN_TYPE">Business</value>
+      <value name="CATERING_SERVICES">Snacks</value>
+      <value name="PREMIUM_SERVICES">Cocktails,Fruits,Cold drinks</value>
+    </record>
+  </record>
+</IDataXMLCoder>

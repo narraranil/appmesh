@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="Booking Details" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="BOOKING_ID"></value>
+      <value name="AIRLINE">LUFTHANSA</value>
+      <value name="TRAVEL_DATE">22-JUN-19</value>
+      <value name="FLIGHT_NUMBER">LUFT1050B</value>
+      <value name="CABIN_TYPE">BUSINESS</value>
+      <value name="TRIP_TYPE">ONE-WAY</value>
+      <value name="FROM_TERMINAL">BLR</value>
+      <value name="TO_TERMINAL">SFO</value>
+      <value name="DEP_TIME">03:30:00</value>
+      <value name="ARR_TIME">22:55:01</value>
+      <value name="PASSENGER_NAME">JHON JAMES</value>
+      <number name="PASSENGER_AGE" type="java.lang.Long">56</number>
+      <value name="EMAIL_ID">JHONJAMES@OUTLOOK.COM</value>
+      <value name="PAYMENT_METHOD">CREDIT CARD</value>
+    </record>
+  </record>
+</IDataXMLCoder>

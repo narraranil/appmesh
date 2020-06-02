@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <record name="Tracking Details" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="FLIGHT_NUMBER">LUFT100A</value>
+      <value name="FLIGHT_STATUS">DEPARTED</value>
+      <value name="FROM_TERMINAL">CLA</value>
+      <value name="TO_TERMINAL">NYK</value>
+      <value name="DEPARTED_TIME">05:30:00</value>
+      <value name="EXPECTED_ARRIVAL_TIME">23:55:01</value>
+      <value name="CURRENT_LOCATION">CAD</value>
+    </record>
+  </record>
+</IDataXMLCoder>

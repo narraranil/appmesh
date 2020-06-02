@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="reservationAccess" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AirlineDemo.descriptors:ReservationAccess</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="trackingSource" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AirlineDemo.descriptors:AirlineTracking</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="inventory" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AirlineDemo.descriptors:InventoryLookup</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="services" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AirlineDemo.descriptors:AirlineServices</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+  <record name="TotalTxn" javaclass="com.wm.util.Values">
+    <value name="urlPath">rad/AirlineDemo.descriptors:TotalTxn</value>
+    <record name="portMap" javaclass="com.wm.util.Values">
+    </record>
+  </record>
+</Values>

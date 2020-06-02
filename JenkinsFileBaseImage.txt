@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages {
+    	stage('Initialize'){
+            steps {
+                sh 'chmod -R 777 ${WORKSPACE}'
+            }
+        }
+	stage('Create base docker file'){
+            steps {
+                sh "${MSR_TARGET_DOCKER}/is_container.sh createLeanDockerfile -Dimage.name=openjdk:8-jre-alpine"
+		echo "${MSR_TARGET_DOCKER}/is_container.sh createDockerfile -Dimage.name=openjdk:8-jre-alpine"
+            }
+        }
+	stage('Build base MSR image'){
+            steps {
+                sh "${MSR_TARGET_DOCKER}/is_container.sh build -Dimage.name=is:msr"
+            }
+        }
+	stage('Push Base image to docker registry'){
+            steps {
+                sh '${MSR_TARGET_DOCKER}/is_container.sh pushImage -Duser=${DockerRegistryUser} -Dpassword=${DockerRegistryPassword} -Dserver=${DockerRegistryUrl} -Drepository.name=${DockerRepositoryName} -Dimage.name=is:msr'
+		echo "Uploaded Base MSR image built successfully"
+		}
+		}
+     }
+    }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.util.Values">
+    <value name="NumberOfEntries">5</value>
+    <array name="Transaction10021" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="Name">Anthony Russo</value>
+        <value name="BookingID">REGX3373ER</value>
+        <value name="TicketPrice">102$</value>
+      </record>
+    </array>
+    <array name="Transaction10022" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="Name">FERNANDIS CAMERON</value>
+        <value name="BookingID">REGX1743ER</value>
+        <value name="TicketPrice">108$</value>
+      </record>
+    </array>
+    <array name="Transaction10023" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="Name">JHON JAMES</value>
+        <value name="BookingID">REGX1124ER</value>
+        <value name="TicketPrice">108$</value>
+      </record>
+    </array>
+    <array name="Transaction10024" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="Name">ROBERT JAMES</value>
+        <value name="BookingID">REGX1122ER</value>
+        <value name="TicketPrice">120$</value>
+      </record>
+    </array>
+    <array name="Transaction10025" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="Name">Mark Ruffalo</value>
+        <value name="BookingID">REGX8956ER</value>
+        <value name="TicketPrice">180$</value>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
