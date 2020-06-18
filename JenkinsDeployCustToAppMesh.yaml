@@ -1,0 +1,45 @@
+apiVersion: apps/v1 # for versions before 1.8.0 use apps/v1beta1
+kind: Deployment
+metadata:
+  name: customerservice-appmesh
+  namespace: asia-presales
+  labels:
+   app: customerservice-a
+spec:
+  replicas: 1 # tells deployment to run 1 pod matching the template
+  selector:
+    matchLabels:
+      app: customerservice-a
+  template: # create pods using pod definition in this template
+    metadata:
+        labels:
+          app: customerservice-a
+    spec:
+      containers:
+      - name: customer-ismicroservicesruntime
+        image: narraranil/is:Customer1.0
+        imagePullPolicy: IfNotPresent        
+        ports:
+        - containerPort: 5555
+      imagePullSecrets:
+        - name: acctest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customerservice-a-svc
+  namespace: asia-presales
+
+spec:
+  # This defines which pods are going to be represented by this Service
+  # The service becomes a network endpoint for either other services
+  # or maybe external users to connect to (eg browser)
+  selector:
+    app: customerservice-a
+
+  ports:
+    - name: http
+      port: 5555
+      nodePort: 30081
+
+  type: NodePort

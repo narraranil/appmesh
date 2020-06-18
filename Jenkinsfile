@@ -15,12 +15,11 @@ pipeline {
 
     stage('Create Customer docker files') {
       steps {
-        sh "${MSR_TARGET_DOCKER}/is_container.sh createPackageDockerfile -Dimage.name=is:msr -Dpackage.list=Customers -Dfile.name=CustomerMSR"
+        sh "${MSR_TARGET_DOCKER}/is_container.sh createPackageDockerfile -Dimage.name=store/softwareag/webmethods-microservicesruntime:10.5.0.3-alpine -Dpackage.list=Customers -Dfile.name=CustomerMSR"
         echo 'Customers package docker file created'
       }
     }
      stage('Build Images') {
-       parallel {
     stage('Customer Service') {
       steps {
         sh "${MSR_TARGET_DOCKER}/is_container.sh buildPackage -Dimage.name=is:${CustomerTag} -Dfile.name=CustomerMSR"
@@ -28,16 +27,7 @@ pipeline {
         echo 'Customers MSR image built successfully'
       }
     }
-    stage('Customer Microgateway') {
-      steps {
-        sh '''#Build MicroGateway
-cd /opt/softwareag_mgw105/Microgateway/
-./microgateway.sh createDockerFile --docker_dir . -p 9090 -a ./tmp-docker/Customer.zip -dof ./Dockerfile -c ./tmp-docker/config.yml
-docker build -t customermg:1.0 .'''
-        echo 'Customers MSR image built successfully'
-      }
-    }
-       }
+       
     }
 
     stage('Register Images') {
@@ -52,9 +42,9 @@ docker build -t customermg:1.0 .'''
     }
      stage('Customer Microgateway'){
       steps {
-        sh 'docker tag customermg:1.0 narraranil/customermg:1.0'
-        sh 'docker push narraranil/customermg:1.0'
-        echo 'Uploaded Customers Microgateway built successfully'
+        //sh 'docker tag customermg:1.0 narraranil/customermg:1.0'
+        //sh 'docker push narraranil/customermg:1.0'
+        //echo 'Uploaded Customers Microgateway built successfully'
       }
     }
       }
@@ -75,8 +65,8 @@ docker build -t customermg:1.0 .'''
  			// Ant build step
  			steps{
 			
- 				sh "ant -buildfile /var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/run-composite-runner.xml -DwebMethods.integrationServer.ssl=false -DwebMethods.home=/opt/softwareag -DwebMethods.test.setup.profile.mode=NONE -DwebMethods.integrationServer.name=localhost -DwebMethods.test.setup.location=/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTests -DwebMethods.test.setup.external.classpath.layout=${env} -DwebMethods.integrationServer.port=5555 -DwebMethods.test.scope.packages=UnitTests -DwebMethods.integrationServer.userid=Administrator -DwebMethods.test.profile.result.location=/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/test/reports/ -DwebMethods.integrationServer.password=manage composite-runner-all-tests" 
-      	publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/test/reports/html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+ 			//	sh "ant -buildfile /var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/run-composite-runner.xml -DwebMethods.integrationServer.ssl=false -DwebMethods.home=/opt/softwareag -DwebMethods.test.setup.profile.mode=NONE -DwebMethods.integrationServer.name=localhost -DwebMethods.test.setup.location=/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTests -DwebMethods.test.setup.external.classpath.layout=${env} -DwebMethods.integrationServer.port=5555 -DwebMethods.test.scope.packages=UnitTests -DwebMethods.integrationServer.userid=Administrator -DwebMethods.test.profile.result.location=/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/test/reports/ -DwebMethods.integrationServer.password=manage composite-runner-all-tests" 
+      //	publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '/var/lib/jenkins/workspace/AccelerateMSRCustomerImage/assets/IS/Tests/AirlineDemoTestSuiteExecutor/test/reports/html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
 	    }
 	
     }
