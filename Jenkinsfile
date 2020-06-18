@@ -36,9 +36,7 @@ pipeline {
     }
 	
 	stage('Push Customer image To K8'){
-    when {
-        branch 'master'
-      }
+
 		steps{
 		sh '${WORKSPACE}/DeployCustomerImageToK8.sh'
 	    }
