@@ -7,26 +7,7 @@ pipeline {
             }
         }
 	stage('Create Template'){
-            steps {
-                sh ("""
-		sed -i 's/DOCKERREPO/'"$DOCKERREPO"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-		sh ("""
-		sed -i 's/IMAGETAG/'"$IMAGETAG"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-		sh ("""
-		sed -i 's/APPNAME/'"$APPNAME"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-		sh ("""
-		sed -i 's/SERVICENAME/'"$SERVICENAME"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-		sh ("""
-		sed -i 's/ENDPOINT/'"$ENDPOINT"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-		sh ("""
-		sed -i 's/DEPLOYMENTNAME/'"$DEPLOYMENTNAME"'/g'  ${WORKSPACE}/PushCustomerImageToK8.yaml
-		""")
-            }
+		echo "create template"
         }
 	
 	
