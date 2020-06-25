@@ -39,6 +39,6 @@ spec:
   ports:
     - name: http
       port: 5555
-      nodePort: 30081
+      nodePort: 30082
 
   type: NodePort
